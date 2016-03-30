@@ -36,9 +36,9 @@ describe App do
       fill_in(:breed, :with => "Mastiff")
       fill_in(:age, :with => "6 months")
       click_button "submit"
-      expect(page).to have_text("Puppy Name:\nButch")
-      expect(page).to have_text("Puppy Breed:\nMastiff")
-      expect(page).to have_text("Puppy Age:\n6 months")
+      expect(page).to have_text("Puppy Name: Butch")
+      expect(page).to have_text("Puppy Breed: Mastiff")
+      expect(page).to have_text("Puppy Age: 6 months")
     end
   end
 
