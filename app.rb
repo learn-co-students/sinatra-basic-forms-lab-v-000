@@ -1,24 +1,22 @@
 require_relative 'config/environment'
-
+require_relative 'models/lawyer'
+require 'nokogiri'
+require 'open-uri'
 class App < Sinatra::Base
 
   get '/' do
+
     erb :index
   end
 
-  get '/new' do
-    erb :create_puppy
+  get '/results' do
+    erb :results
   end
 
-  post '/new' do
-    @name= params[:name]
-    @breed = params[:breed]
-    @age = params[:age]
-    @new_instance = Puppy.new(@name,@breed,@age)
-    @n_name = @new_instance.name
-    @n_breed = @new_instance.breed
-    @n_age = @new_instance.age
-
-      erb :display_puppy
+  post '/results' do
+    @new_scrape = Scrape.create_hash("https://www.avvo.com/search/lawyer_search?utf8=%E2%9C%93&q=#{params['legal']}&loc=#{params['location']}&button=")
+    erb :results
+     
   end
+
 end
