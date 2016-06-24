@@ -1,0 +1,25 @@
+<!--  expect(page).to have_text("Puppy Name:\nButch")
+      expect(page).to have_text("Puppy Breed:\nMastiff")
+      expect(page).to have_text("Puppy Age:\n6 months")
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption is Awesome</title>
+  </head>
+  <body>
+    <h1>Here is Your New Puppy</h1>
+    <form method="POST" action="/display_puppy"> 
+  
+      <p>Puppy Name:\n<%= @new_puppy.name %></p>
+      <p>Puppy Breed:\n<%= @new_puppy.breed %></p>
+      <p>Puppies Age:\n<%= @new_puppy.age %></p>
+
+    
+    </form>
+
+
+  </body>
+</html>
