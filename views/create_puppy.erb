@@ -1,0 +1,27 @@
+<!-- 
+expect(page).to have_selector("form")
+expect(page).to have_field(:name)
+expect(page).to have_field(:breed)
+expect(page).to have_field(:age) 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption is Awesome</title>
+  </head>
+  <body>
+    <h1>Create a new Puppy</h1>
+    <form method="POST" action="/display_puppy"> 
+  
+      <p>Puppies Name: <input type="text" name="name"></p>
+      <p>Puppies Breed: <input type="text" name="breed"></p>
+      <p>Puppies Age: <input type="text" name="age"></p>
+      <input type="submit" name="submit" id="submit">
+
+    
+    </form>
+
+
+  </body>
+</html>
