@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Puppy</title>
+  </head>
+  <body>
+
+    <%= yield %>
+
+    <% unless @new_page %>
+      <br>
+      <a href="/new">Click Here To List A Puppy</a>
+    <% end %>
+  </body>
+</html>
