@@ -1,0 +1,4 @@
+<h1>Your Puppy!<h1><br>
+<% params.each do |key, value| %>
+<h2><%= "Puppy #{key.to_s.capitalize}:\n#{value}" %></h2>
+<% end %>
