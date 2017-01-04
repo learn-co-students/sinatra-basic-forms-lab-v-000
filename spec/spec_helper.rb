@@ -1,7 +1,8 @@
 ENV["SINATRA_ENV"] = "test"
 require_relative '../config/environment.rb'
 require 'rack/test'
-
+require 'capybara'
+require 'capybara/rspec'
 RSpec.configure do |config|
   config.include Capybara::DSL
   config.include Rack::Test::Methods
