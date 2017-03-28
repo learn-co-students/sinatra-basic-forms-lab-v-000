@@ -1,0 +1,20 @@
+<h2>Puppy Info</h2>
+<% puppy_traits = ["Name", "Breed", "Age"] %>
+<% puppy_traits.each do |trait| %>
+  <h3>Puppy <%= trait %>:</h3>
+  <h3><%= @puppy.send(trait.downcase) %>
+<% end %>
+
+
+
+<!-- <h3>Puppy Name:</h3>
+<h3><%=  %></h3>
+
+
+
+
+
+<h3>Puppy Age:</h3>
+<h3><%=  %></h3>
+<h3>Puppy Name:</h3>
+<h3><%=  %></h3> -->
