@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>View Puppy</title>
+  </head>
+  <body>
+    <h1>View Puppy</h1>
+    <% new_pup = Puppy.new(@name, @breed, @age) %>
+    <p>Puppy Name: <%= new_pup.name %></p>
+    <p>Puppy Breed: <%= new_pup.breed %></p>
+    <p>Puppy Age: <%= new_pup.age %></p>
+  </body>
+</html>
