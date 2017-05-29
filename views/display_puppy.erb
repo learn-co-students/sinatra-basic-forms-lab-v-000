@@ -1,0 +1,15 @@
+<h1>Puppies!!!</h1>
+<h2>Your loving home can become more loving!</h2>
+
+<h3>Puppies:</h3>
+<ol>
+	<% @puppies.each do |puppy| %>
+		<li>
+			<ul>
+				<li><%= "Puppy Name:\n#{puppy.name}" %></li>
+				<li><%= "Puppy Breed:\n#{puppy.breed}" %></li>
+				<li><%= "Puppy Age:\n#{puppy.age}" %></li>
+			</ul>
+		</li>
+	<% end %>
+</uoll>
