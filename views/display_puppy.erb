@@ -1,0 +1,9 @@
+<%= new_puppy = Puppy.new(params[:name], params[:breed], params[:age])%>
+<h3>Success! You've created a new puppy and now the unicorns are rejoicing.</h3>
+
+<p> Puppy Name: <%=new_puppy.name%> </p>
+<p> Puppy Breed: <%=new_puppy.breed%> </p>
+<p> Puppy Age: <%=new_puppy.age%> </p>
+
+
+<a href="/new">Create another puppy</a>
