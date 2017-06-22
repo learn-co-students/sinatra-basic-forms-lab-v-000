@@ -7,10 +7,7 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    it 'renders welcome' do 
-      visit '/'
-      expect(page).to have_link("Click Here To List A Puppy")
-    end
+
   end
 
   describe 'GET /NEW' do 
