@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Puppy</title>
+ </head>
+ <body>
+   <h1>Your Puppy</h1>
+   <% @puppy.each do |k,v| %>
+    <h2><%= "#{k}: #{v}" %></h2>
+   <% end %>
+ </body>
+</html>
