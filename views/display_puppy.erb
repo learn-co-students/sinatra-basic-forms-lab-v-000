@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>View Your Puppy!</h1>
+
+    <form method="post" action="/">
+      <p>Enter your phrase:</p>
+      <textarea name="user_phrase"></textarea>
+      <br>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+    <h2>Puppy Name: <%=@name%></h2>
+    <h2>Puppy Breed: <%=@breed%></h2>
+    <h2>Puppy Age: <%=@age%></h2>
+
+  </body>
+</html>
