@@ -1,4 +1,6 @@
 require_relative 'config/environment'
+require_relative 'models/puppy'
+
 
 class App < Sinatra::Base
   get '/' do
@@ -6,19 +8,12 @@ class App < Sinatra::Base
   end
 
   get '/new' do
-    erb :welcome
+    erb :create_puppy
   end
 
   post '/' do
-    @phrase = PigLatinizer.new
-    @initial_sentence = params[:user_phrase]
+    @pup = Puppy.new(params[:name], params[:breed], params[:age])
 
-    erb :piglatin_results
+    erb :display_puppy
   end
 end
-# GET /
-#    renders welcome
-#  GET /NEW
-#    renders the form
-#  POST /
-#    displays the puppy
