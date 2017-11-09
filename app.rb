@@ -2,6 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 # a comment!
+# another comment!
   get '/' do
     erb :index
   end
