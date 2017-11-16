@@ -8,8 +8,11 @@ class App < Sinatra::Base
    post '/create_puppy' do
      erb :create_puppy
    end
+   get '/create_puppy' do
+    "Hello World"
+  end
 
-  get '/create_puppy' do
+   post '/display_puppy' do
     erb "display_puppy"
   end
 end
