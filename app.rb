@@ -5,12 +5,14 @@ class App < Sinatra::Base
     erb :index
    end
 
-   post '/create_puppy' do
+   post '/new' do
      erb :create_puppy
    end
 
-   post '/display_puppy' do
+   post '/???' do
     @puppy = Puppy.new(params[:name], params[:breed], params[:age])
     erb  :display_puppy
   end
 end
+
+#this is what I don't understand: how the name of the view erb is connected to the name of the /page.
