@@ -13,6 +13,9 @@ class App < Sinatra::Base
 
   post "/" do
     @new_puppy = Puppy.new(params[:name], params[:breed], params[:age])
+    @name_label = "Puppy Name:\n"
+    @breed_label = "Puppy Breed:\n"
+    @age_label = "Puppy Age:\n"
     erb :display_puppy
   end
 
