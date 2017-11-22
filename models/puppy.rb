@@ -8,3 +8,5 @@ class Puppy
     @age = age
     @@all << self
   end
+
+end
