@@ -1,0 +1,9 @@
+<!--Lets make a form -->
+<form method="post" action="/display_puppy"><!-- when contents of the form have been filled out, it will post to the piglatinize. This corresponds to the post route in the app.rb controller-->
+     <p>Enter the puppy name:   <textarea name="name"></textarea></p>  <!-- text area is the input box, the contents of the inputs of the textbox is named user_phrase which will be setup as a hash by Sinatra magic which can be extracted using params[:user_phrase]-->
+     <p>Enter the puppy breed:   <textarea name="breed"></textarea></p>
+     <p>Enter the puppy age:   <textarea name="age"></textarea></p>
+     <button type="submit" value="submit">Submit</button>
+</form>
+
+<!-- the form action directly responds to the post controller in app.rb-->
