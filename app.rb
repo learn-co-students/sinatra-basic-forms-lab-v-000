@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-require_relative 'models/puppy.rb'
+require_relative 'models/puppy.rb'   #this file directly links to our module that allows us to create a puppy classe in our form post below
 
 #tests were not running correctly until i added the below requirements for capybara and capybbara/dsl
 #   1) in the config directory, in environment.rb i had to hash (nil out) the #require_all 'models' then in app.rb   #require_relative 'models/puppy.rb' is necessary so the model directory, puppy.rb can communicate with the controller
@@ -10,14 +10,15 @@ require_relative 'models/puppy.rb'
 
 
 class App < Sinatra::Base
-  get '/' do
-    erb :index
+  get '/' do   #this is the homepage where teh controller receives a get request at '/'
+    erb :index  #displays the index.erb file located in the views directory
   end
   get '/new' do
     erb :new
   end
   post '/display_puppy' do   #the action '/display_puppy' directly matches to the form action.  These must match to work
-    @pup = Puppy.new(params[:name], params[:breed], params[:age])    #user_phrase derives from form's
+    #here, because above we require_relative access to our module for the puppy class, we can create an instance of a pupppy and save it as a instance variavl @pup.  This instance variable will be usable in the display_puppy.erb file in the views directory only because it is called below.  the variable will not be available unless it is directly written below
+    @pup = Puppy.new(params[:name], params[:breed], params[:age])   #these params hash names are set from the textarea name in the form on the new.erb file located in the views directory
     erb :display_puppy   #this directs the user to the views directory erb file.  This erb file name must match the file name that you want viewed. It can be different than the action name above
   end
 end
