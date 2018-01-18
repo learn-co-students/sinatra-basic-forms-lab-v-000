@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Puppy Site - Create a new Puppy!</title>
+    <style media="screen">
+      #submit {
+        background-color: white;
+        color: black;
+      }
+
+      #submit:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      input[name="name"]{
+        color: red;
+      }
+
+      input[name="breed"]{
+        color: green;
+      }
+
+      input[name="age"]{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a new puppy!</h1>
+    <hr>
+    <form action="/" method="post">
+      <label style="color: red">Name: </label><input type="text" name="name"><br><br>
+      <label style="color: green">Breed: </label><input type="text" name="breed"><br><br>
+      <label style="color: blue">Age: </label><input type="text" name="age"><br><br>
+
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+</html>
