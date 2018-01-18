@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Puppy</title>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>New Puppy</h1>
+    <h2>Name:<%= "\n#{@new_puppy.name}" %></h2>
+    <h2>Puppy Breed:<%= "\n#{@new_puppy.breed}" %></h2>
+    <h2>Puppy Age:<%= "\n#{@new_puppy.age}" %></h2>
+
+    <a href="/">Back to home</a>
+  </body>
+</html>
