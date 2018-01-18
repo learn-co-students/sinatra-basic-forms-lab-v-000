@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Display Puppies</title>
+  </head>
+  <body>
+    <% @puppies.each do |pup| %>
+        <p>Puppy Name:</p>
+        <p><%= pup.name %></p>
+        <p>Puppy Breed:</p>
+        <p><%= pup.breed %></p>
+        <p>Puppy Age:</p>
+        <p><%= pup.age %></p>
+    <% end %>
+  </body>
+</html>
