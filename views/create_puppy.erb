@@ -1,0 +1,24 @@
+<form method="post" action="/puppy">
+  <label for="name"> Puppy Name</label>
+  <input type="text" id="name" name="name">
+  <label for="breed"> Puppy Breed</label>
+  <input type="text" id="breed" name="breed">
+  <label for="age"> Puppy Age</label>
+  <input type="text" id="age" name="age">
+  <input type="submit" value="submit">
+</form>
+
+<!-- describe 'GET /NEW' do 
+  it 'sends a 200 status code' do
+    get '/new'
+    expect(last_response.status).to eq(200)
+  end
+
+  it 'renders the form' do
+    visit '/new'
+    expect(page).to have_selector("form")
+    expect(page).to have_field(:name)
+    expect(page).to have_field(:breed)
+    expect(page).to have_field(:age)
+  end
+end -->
