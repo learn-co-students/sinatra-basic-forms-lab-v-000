@@ -1,0 +1,11 @@
+<h1>Puppy Adoption Site</h1>
+<h4><a href="/new">Click Here To List A Puppy</a></h4>
+
+<h2>Puppies</h2>
+<% @dogs.each do |dog| %>
+<h3><%= dog.name %></h3>
+<p>
+  <%= dog.breed %> | <%= dog.age %>
+</p>
+<br />
+<% end %>
