@@ -1,0 +1,17 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+    <% Puppy.all.each do |pup| %>
+      <h1>Puppy Name:</h1>
+      <h2><%=pup.name%></h2>
+
+      <h1>Puppy Breed:</h1>
+      <h2><%=pup.breed%></h2>
+
+      <h1>Puppy Age:</h1>
+      <h2><%=pup.age%></h2>
+    <% end %>
+  </body>
+</html>
