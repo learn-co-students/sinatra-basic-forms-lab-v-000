@@ -2,7 +2,7 @@ class Puppy
   attr_reader :name, :breed, :age
   @@all = []
 
-  def initialize(name= nil, breed= nil, age= 0)
+  def initialize(name= nil, breed= nil, age= nil)
     @name = name
     @breed = breed
     @age = age
@@ -17,7 +17,7 @@ class Puppy
     @breed= string
   end
 
-  def age=(integer)
-    @age= integer
+  def age=(string)
+    @age= string
   end
 end
