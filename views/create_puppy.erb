@@ -1,0 +1,35 @@
+
+
+<style media="screen">
+div {
+  position: relative;
+  width: 30%;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 1em 4em;
+  margin: .5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
+
+
+<form  action="/new" method="POST">
+  <div>
+    <label for="pup_name">Name:</label>
+    <input type="text" name="name" id="pup_name" placeholder="Text Here...">
+  </div>
+  <div>
+    <label for="pup_breed">Breed:</label>
+    <input type="text" name="breed" id="pup_breed" placeholder="Text Here...">
+  </div>
+  <div>
+    <label for="pup_age">Age:</label>
+    <input type="text" name="age" id="pup_age" placeholder="Text Here...">
+  </div>
+  <input type="submit" name="submit" value="Submit" id="submit">
+
+</form>
