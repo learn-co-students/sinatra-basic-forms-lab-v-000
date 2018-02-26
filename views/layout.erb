@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption Store</title>
+    
+    <!--style-->
+    <style>
+      body {text-align: center;margin: 0;}
+      /*background*/
+      html {background: url(https://static.enmasse.com/store/tera/Large/animals2/Puppy.jpg) no-repeat center center fixed;background-size: cover;height: 100%;overflow: hidden;}
+      
+      
+      h1 {;font-size: 5em;text-shadow: 0 0 50px #4BC6E2;margin-bottom: 0;}
+      
+      p, a {;font-family: Georgia, serif;font-size: 33px;font-style: italic;font-weight: normal;color: white;background-color: rgba(199, 147, 69, 0.9);padding: 18px; margin-right: -4px;margin-bottom: 0;}
+      
+      form {display: inline-block;}
+      .button {margin: 20px;color: white;background: rgba(199, 147, 69, 0.9);padding: 20px 40px;}
+      
+      #greeting {position: relative;top: 51px;text-decoration: none;border: solid 3px #ddd;}
+    </style>
+    <!--style-->
+    
+  </head>
+  <body>
+<!---------------------------------------------------------------------------------------->    
+    <%= yield %>
+<!---------------------------------------------------------------------------------------->    
+  </body>
+</html>
