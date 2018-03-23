@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <form method="POST" action="/display">
+      <% @puppy_info.each do |info| %>
+      <p><%= info %></p>
+      <% end %>
+  </form>
+</body>
+</html>
