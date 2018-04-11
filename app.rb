@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @name = params["n"]
     @breed = params["b"]
     @age = params["a"]
-    erb :third_view
+    erb :display_puppy
   end
 
 
