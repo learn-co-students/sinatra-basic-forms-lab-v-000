@@ -12,9 +12,10 @@ class App < Sinatra::Base
 
 
   post '/'do
-    @name = params["n"]
-    @breed = params["b"]
-    @age = params["a"]
+ #  Always look for what the Params with Binding.pry
+ # params always hold the information from the Form as a Hash[]
+  @puppy = Puppy.new(params[:name],params[:breed],params[:age])
+
     erb :display_puppy
   end
 
