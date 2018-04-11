@@ -12,12 +12,13 @@ class App < Sinatra::Base
 
 
   post '/'do
- #  Always look for what the Params with Binding.pry
- # params always hold the information from the Form as a Hash[]
   @puppy = Puppy.new(params[:name],params[:breed],params[:age])
-#  when you say Puppy.new...(you app know that is a class method.)
     erb :display_puppy
   end
+
+ #  Always look for what the Params with Binding.pry
+ # params always hold the information from the Form as a Hash[]
+ #  when you say Puppy.new...(you app know that is a class method.)
 
 
 end
