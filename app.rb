@@ -11,7 +11,7 @@ class App < Sinatra::Base
 	end
 
 	post '/display_puppy' do
-		params.to_s
+		"Puppy Name: #{params[:name]}, Breed: #{params[:breed]}, Age: #{params[:age]}"
 	end
 
 end
