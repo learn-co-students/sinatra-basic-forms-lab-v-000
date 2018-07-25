@@ -5,8 +5,10 @@
 	</head>
 	<body>
 		<h1>Add a puppy to our adoption list:</h1>
-			<form>
-				<p>Puppy: <input type="text"></p>
+			<form method="POST" action="/display_puppy">
+				<p>Name: <input type="text" name="name"></p>
+				<p>Breed: <input type="text" name="breed"></p> 
+				<p>Age: <input type="text" name="age"></p>
 				<input type="submit">
 			</form>
 	</body>
