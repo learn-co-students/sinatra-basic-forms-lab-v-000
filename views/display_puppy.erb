@@ -5,10 +5,10 @@
   <title>Puppy!</title>
  </head>
  <body>
-
-   <h1>Puppy Name: <%=@name%></h1>
-   <h2>Puppy Breed: <%=@breed%></h2>
-   <h2>Puppy Age: <%=@age%></h2>
+    <% pup = Puppy.new(@name, @breed, @age) %>
+   <h1>Puppy Name: <%=pup.name%></h1>
+   <h2>Puppy Breed: <%=pup.breed%></h2>
+   <h2>Puppy Age: <%=pup.age%></h2>
 
  </body>
 </html>
