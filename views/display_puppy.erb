@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <title>DFW Pet Adoptions</title>
+</head>
+<body>
+    <header>
+        <h1>DFW Pet Adoptions</h1>
+
+        <nav>
+            <a href="/">About</a> <a href="">Adoptions</a> <a href="#">Pet Care Tips</a> <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    
+    <div class="puppy-box col-sm-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="http://cdn.akc.org/content/hero/introducing_your_puppy_to_his_home_header.jpg" alt="Small brown and black puppy on white carpet">
+                <h3>Puppy Name:</h3>
+                <h4><%=@pup.name%></h4>
+                <h3>Puppy Breed:</h3>
+                <h4><%=@pup.breed%></h4>
+                <h3>Puppy Age:</h3>
+                <h4><%=@pup.age%></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
