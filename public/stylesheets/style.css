@@ -1,0 +1,25 @@
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+form {
+    border: 1px solid black;
+    padding-top:15px;
+    /* overflow: auto; */
+}
+input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.puppy-box {
+    border: 1px solid black;
+    padding-top: 15px;
+    background: rgba(242,242,242,.95);
+}
+
+.puppy-box img {
+    border: 1px solid black;
+}
+
