@@ -5,11 +5,16 @@
   <title>Puppy for Adoption</title>
  </head>
  <body>
-   
 
-  Name: <%= @name %>
-  Breed: <%= @breed %>
-  Age: <%= @pg %>
+   <form method="post" action="/new">
+     <p>Name: <%= params[:name] %></p>
+     <p>Breed: <%= params[:breed] %></p>
+     <p>Age: <%= params[:age] %></p>Input the text you want analyzed here:</p>
+
+     <button type="submit" value="submit">Submit</button>
+   </form>
+
+
 
 
  </body>
