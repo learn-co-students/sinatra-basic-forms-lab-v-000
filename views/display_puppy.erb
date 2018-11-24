@@ -1,5 +1,17 @@
-<body>
-  <p>Puppy Name: <%= @name %></p>
-  <p>Puppy Breed: <%= @breed %></p>
-  <p>Puppy Age: <%= @age %></p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Puppy Adoption</title>
+  </head>
+
+  <body>
+    <!-- <p>Puppy Name: <%= @name %></p>
+    <p>Puppy Breed: <%= @breed %></p>
+    <p>Puppy Age: <%= @age %></p> -->
+
+    <p>Puppy Name: <%= @puppy.name %></p>
+    <p>Puppy Breed: <%= @puppy.breed %></p>
+    <p>Puppy Age: <%= @puppy.months_old %> months old</p>
+  </body>
+
+</html>
