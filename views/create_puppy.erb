@@ -1,9 +1,22 @@
-<form method="post" action="/puppy">
-  <label for="name"> Puppy Name</label>
-  <input type="text" id="name" name="name">
-  <label for="breed"> Puppy Breed</label>
-  <input type="text" id="breed" name="breed">
-  <label for="age"> Puppy Age</label>
-  <input type="text" id="age" name="age">
-  <input type="submit" value="submit">
-</form>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Create a New Puppy</title>
+  </head>
+  <body>
+
+    <h1>Add a New Puppy</h1>
+    <form method="POST" action="/puppy">
+      Name:<br>
+      <input type="text" name="name"><br>
+      Breed:<br>
+      <input type="text" name="breed"><br>
+      Age:<br>
+      <input type="text" name="age"><br>
+      <input type="submit" id="submit">
+    </form>
+
+  </body>
+</html>
