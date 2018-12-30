@@ -11,4 +11,9 @@ class App < Sinatra::Base
     @age = params[:age]
     erb :create_puppy
   end
+  
+   post "/" do 
+    @new_puppy = Puppy.new(params[:name, :breed, :age]) 
+    erb :display_puppy
+  end
 end
