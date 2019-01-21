@@ -8,4 +8,12 @@ attr_reader :breed
     @age = age
   end
 
+  def months_old
+    if @age.to_i == 1
+      "#{@age} month"
+    else
+      "#{@age} months"
+    end
+  end
+
 end
