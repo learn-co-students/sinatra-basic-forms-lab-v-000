@@ -4,5 +4,7 @@
   <p>Puppy Age:  puppy months</p>
 </body> -->
 <body>
-<p>hello</p>
+<% @hash.each do |k,v| %>
+    <p><%= k %>: <%= v %></p>
+<% end %>
 </body>
