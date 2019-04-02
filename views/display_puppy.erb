@@ -1,5 +1,6 @@
 <body>
-  <p>Puppy Name: <%= @name %></p>
-  <p>Puppy Breed: <%= @breed %></p>
-  <p>Puppy Age: <%= @age %> months</p>
+<% @hash["age"] = @hash.delete("months_old")%>
+  <% @hash.each do |k,v| %>
+      <h2><%= "#{k.capitalize}: #{v} months" %></h2>
+  <% end %>
 </body>
