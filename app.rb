@@ -7,11 +7,11 @@ class App < Sinatra::Base
       end
 
   get '/new' do
-        # erb :user_input
+        erb :index
       end
 
   post '/puppy' do
-        # erb :user_input
+        erb :display_puppy
       end
 
 end
