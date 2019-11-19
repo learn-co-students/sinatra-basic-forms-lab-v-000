@@ -5,7 +5,7 @@ attr_accessor :name, :breed, :months_old
   
     @name = params[:name]
     @breed = params[:breed]
-    @months_old = params[:age]
+    @months_old = params[:months_old]
   end
 
 
