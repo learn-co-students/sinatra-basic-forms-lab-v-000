@@ -1,3 +1,15 @@
 <h1> Welcome to the puppy adoption site!</h1>
+<h2>Puppies that need a home:</h2>
+    <% if @puppies.length != 0 %>
+<ul>
+        <% @puppies.each do |puppy| %>
+            <li><%= puppy.name %></li>
+        <% end %>
+
+</ul>
+    <% else %>
+    <p>All our puppies have found a home!</p>
+    <% end %>
+
 
 <a href="/new">List A Puppy</a>
