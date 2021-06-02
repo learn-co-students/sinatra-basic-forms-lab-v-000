@@ -4,6 +4,7 @@ class Puppy
     attr_accessor :age, :name
 
   def initialize(name, breed, age)
+    # binding.pry
     @name = name
     @breed = breed
     @age = age
